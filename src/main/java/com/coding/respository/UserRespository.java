@@ -1,13 +1,14 @@
-package com.coding.hellospringboot.respository;
+package com.coding.respository;
 
-import com.coding.hellospringboot.domain.User;
+import com.coding.domain.User;
 import org.springframework.stereotype.Repository;
 
+import java.util.Collection;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * {@link com.coding.hellospringboot.domain.User} {@link UserRespository}
+ * {@link User} {@link UserRespository}
  * Created by 平凡的世界 on 2018/4/26.
  */
 @Repository
@@ -36,6 +37,13 @@ public class UserRespository {
         //保存id
         user.setId(id);
         return  reponsitory.put(id, user)== null;
+    }
 
+    /**
+     * 返回所有用户的列表
+     * @return
+     */
+    public Collection<User> findAll(){
+        return reponsitory.values();
     }
 }

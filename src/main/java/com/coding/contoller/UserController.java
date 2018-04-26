@@ -1,7 +1,7 @@
-package com.coding.hellospringboot.contoller;
+package com.coding.contoller;
 
-import com.coding.hellospringboot.domain.User;
-import com.coding.hellospringboot.respository.UserRespository;
+import com.coding.domain.User;
+import com.coding.respository.UserRespository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -28,4 +28,6 @@ public class UserController {
         }
         return user;
     };
+
+
 }

@@ -1,4 +1,4 @@
-package com.coding.hellospringboot;
+package com.coding;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
